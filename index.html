@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="school-logo.png"  alt="School Logo">
+            </div>
+            <nav class="navbar">
+                <a href="#about">About Us</a>
+                <a href="#mission-vision">Mission & Vision</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#admission">Admission</a>
+                <a href="#end">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="picture" class="picture">
+        <div class="cont">
+            <img src="final.avif" alt="School background" class="imeg">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Our School</h2>
+            <p>Renu Public School is committed to providing quality education in a nurturing environment.<br> 
+             We focus on academic excellence, holistic development, and fostering a passion for lifelong learning.</p>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision" class="mission-vision">
+        <div class="container">
+            <h2>Mission & Vision</h2>
+            <div class="content">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <p>To inspire and empower students to achieve academic excellence, develop critical thinking, and become compassionate leaders who contribute positively to society.</p>
+                </div>
+                <div class="vision">
+                    <h3>Our Vision</h3>
+                    <p>To be a leading educational institution recognized for nurturing holistic development and shaping future generations to excel in a global environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="building.jpg" alt="School Building">
+                <img src="classroom.jpg" alt="Classroom">
+                <img src="sport.jpg" alt="Sports Ground">
+            </div>
+        </div>
+    </section>
+
+    <section id="admission" class="admission">
+        <div class="container">
+            <h2>Admission Enquiry Form</h2>
+            <form id="admissionForm" action="submit_form.php" method="POST">
+                <label for="name">Parent Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Child Name:</label>
+                <input type="text" id="child" name="child" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="grade">Grade Applying For:</label>
+                <select id="grade" name="grade" required>
+                    <option value="">Select</option>
+                    <option value="grade1">Grade 1</option>
+                    <option value="grade2">Grade 2</option>
+                    <option value="grade3">Grade 3</option>
+                    <option value="grade4">Grade 4</option>
+                    <option value="grade5">Grade 5</option>
+                    <option value="grade6">Grade 6</option>
+                    <option value="grade7">Grade 7</option>
+                    <option value="grade8">Grade 8</option>
+                    <option value="grade9">Grade 9</option>
+                    <option value="grade10">Grade 10</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+     
+<section id="end" class="end">
+    <footer class="footer">
+        <div class="container">
+            <p>Location: Miyapur,opposite Metro station,hyderabd,Telangana</p>
+            <pre><p>Contact: 014-8187080117,014-8187080116</p></pre>
+            <p>© 2024 Renu Public Schools. All rights reserved.</p>
+        </div>
+    </footer>
+</section>
+
+</body>
+</html>
